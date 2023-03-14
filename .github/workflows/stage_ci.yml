@@ -29,6 +29,11 @@ jobs:
         echo "GITHUB_URL: $GITHUB_URL"
         echo "GITHUB_URL=$GITHUB_URL" >> $GITHUB_ENV
    
+    - name: setting node --version
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+
     - name: Install Dependencies
       run: |
         npm install
