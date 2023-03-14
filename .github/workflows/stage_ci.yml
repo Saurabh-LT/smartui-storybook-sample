@@ -37,7 +37,6 @@ jobs:
     - name: Install Dependencies
       run: |
         npm install
-        npm install commander --save
         
     - name: Check out other repo
       uses: actions/checkout@v3
@@ -53,4 +52,5 @@ jobs:
       run: |
         npm -v
         node -v
+        npm install commander --save
         node index.js storybook ./storybook-static --env stage
