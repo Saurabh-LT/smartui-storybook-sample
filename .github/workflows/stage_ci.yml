@@ -53,5 +53,4 @@ jobs:
       run: |
         npm -v
         node -v
-        smartui --version
         node index.js storybook ./storybook-static --env stage
