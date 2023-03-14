@@ -32,9 +32,10 @@ jobs:
         npm install @lambdatest/smartui-storybook -g
         
     - name: Check out my other private repo
-      uses: actions/checkout@stage
+      uses: actions/checkout@v3
       with:
           repository: LambdaTest/smartui-storybook
+          ref: stage
           
     - name: Create storybook static build
       run: | 
