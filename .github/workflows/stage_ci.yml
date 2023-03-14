@@ -61,7 +61,6 @@ jobs:
 
     - name: Execute storybook build
       run: |
-        npm -v
-        node -v
+        cd smartui-storybook
         npm install commander --save
         node index.js storybook ../storybook-static --env stage
