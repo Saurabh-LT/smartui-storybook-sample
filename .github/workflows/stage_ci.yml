@@ -51,10 +51,12 @@ jobs:
       with:
           repository: LambdaTest/smartui-storybook
           ref: stage
+          path: smartui-storybook
 
     - name: Install Dependencies
       run: |
         ls
+        cd smartui-storybook
         npm install
 
     - name: Execute storybook build
