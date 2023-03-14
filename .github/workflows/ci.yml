@@ -1,5 +1,4 @@
-
-name: Prod Storybook PR Checks Branch Master 
+name: Prod Storybook PR Checks 
 on:
   pull_request:
     branches:
