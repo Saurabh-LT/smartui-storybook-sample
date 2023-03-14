@@ -37,7 +37,7 @@ jobs:
     - name: Install Dependencies
       run: |
         npm install
-        npm install @lambdatest/smartui-storybook -g
+        npm install commander --save
         
     - name: Check out other repo
       uses: actions/checkout@v3
