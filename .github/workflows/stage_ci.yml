@@ -45,4 +45,4 @@ jobs:
       run: |
         smartui --version
         smartui config create .smartui.json
-        smartui storybook ./storybook-static --config .smartui.json --env stage
+        node index.js storybook ./storybook-static --config .smartui.json --env stage
