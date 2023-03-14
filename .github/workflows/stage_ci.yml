@@ -62,4 +62,4 @@ jobs:
         npm -v
         node -v
         npm install commander --save
-        node index.js storybook ../smartui-storybook-sample/storybook-static --env stage
+        node index.js storybook ../storybook-static --env stage
