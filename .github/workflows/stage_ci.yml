@@ -37,7 +37,7 @@ jobs:
     - name: Install Dependencies for first repo
       run: |
         ls
-        npm install @lambdatest/smartui-storybook -g
+        npm install
 
     - name: Create storybook static build
       run: |
