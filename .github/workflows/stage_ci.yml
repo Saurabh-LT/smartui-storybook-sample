@@ -36,6 +36,8 @@ jobs:
 
     - name: Create storybook static build
       run: |
+        ls
+        cat package.json
         npm run build-storybook    
         ls
 
