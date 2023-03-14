@@ -34,6 +34,11 @@ jobs:
       with:
         node-version: '16.x'
 
+    - name: Install Dependencies for first repo
+      run: |
+        ls
+        npm install @lambdatest/smartui-storybook -g
+
     - name: Create storybook static build
       run: |
         ls
