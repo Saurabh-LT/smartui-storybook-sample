@@ -11,6 +11,9 @@ jobs:
   smartui-gihub-action:
     name: Execute Storybook build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
     steps:
     - uses: actions/checkout@v1
 
@@ -43,5 +46,7 @@ jobs:
 
     - name: Execute storybook build
       run: |
+        npm -i
+        node -v
         smartui --version
         node index.js storybook ./storybook-static --env stage
