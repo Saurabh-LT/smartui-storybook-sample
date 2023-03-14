@@ -39,7 +39,6 @@ jobs:
           
     - name: Create storybook static build
       run: | 
-        npm run build-storybook
         echo pwd
 
     - name: Execute storybook build
