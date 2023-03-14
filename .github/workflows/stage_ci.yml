@@ -44,5 +44,4 @@ jobs:
     - name: Execute storybook build
       run: |
         smartui --version
-        smartui config create .smartui.json
-        node index.js storybook ./storybook-static --config .smartui.json --env stage
+        node index.js storybook ./storybook-static --env stage
