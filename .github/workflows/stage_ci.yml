@@ -46,7 +46,7 @@ jobs:
 
     - name: Execute storybook build
       run: |
-        npm -i
+        npm -v
         node -v
         smartui --version
         node index.js storybook ./storybook-static --env stage
