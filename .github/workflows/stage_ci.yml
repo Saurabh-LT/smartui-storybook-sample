@@ -1,4 +1,4 @@
-name: Storybook PR Checks
+name: Stage Storybook PR Checks
 on:
   pull_request:
     branches:
