@@ -1,4 +1,4 @@
-name: Storybook PR Checks Branch Master
+name: Stage Storybook PR Checks
 on:
   pull_request:
     branches:
@@ -11,6 +11,9 @@ jobs:
   smartui-gihub-action:
     name: Execute Storybook build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
     steps:
     - uses: actions/checkout@v1
 
@@ -26,16 +29,38 @@ jobs:
         echo "GITHUB_URL: $GITHUB_URL"
         echo "GITHUB_URL=$GITHUB_URL" >> $GITHUB_ENV
    
-    - name: Install Dependencies
+    - name: setting node --version
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+
+    - name: Install Dependencies for first repo
       run: |
+        ls
         npm install
-        npm install @lambdatest/smartui-storybook -g
 
     - name: Create storybook static build
-      run: npm run build-storybook
+      run: |
+        ls
+        cat package.json
+        npm run build-storybook    
+        ls
+
+    - name: Check out other repo
+      uses: actions/checkout@v3
+      with:
+          repository: LambdaTest/smartui-storybook
+          ref: stage
+          path: smartui-storybook
+
+    - name: Install Dependencies
+      run: |
+        ls
+        cd smartui-storybook
+        npm install
 
     - name: Execute storybook build
       run: |
-        smartui --version
-        smartui config create .smartui.json
-        smartui storybook ./storybook-static --config .smartui.json --env stage
+        cd smartui-storybook
+        npm install commander --save
+        node index.js storybook ../storybook-static --env stage
