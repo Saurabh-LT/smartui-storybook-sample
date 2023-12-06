@@ -1,0 +1,31 @@
+{
+  "caucus": "{{stateName}} Caucus",
+  "caucusResultsIn": "{{stateName}} {{party}} Caucus",
+  "caucusStartsAt": "Caucus begins at {{time}} ET",
+  "ctaText": {
+    "text": "Full Elections Coverage",
+    "url": "https://www.nbcnews.com/politics/2020-presidential-election"
+  },
+  "download": "Download our app",
+  "downloadUrl": "https://smart.link/5e332283be3e0",
+  "liveBlog": "Live updates",
+  "liveBlogButton": {
+    "title": "Full Elections Coverage",
+    "link": " https://www.nbcnews.com/{{electionDate}}liveblog"
+  },
+  "parties": {
+    "dem": "Dem",
+    "rep": "GOP"
+  },
+  "raceType": {
+    "primary": "primary",
+    "caucus": "caucus"
+  },
+  "percentIn": "{{percent}}% In",
+  "pollsCloseAt": "Polls close at {{time}} ET",
+  "preResultsRaceName": "<span class=\"db f7 ttu gray-100\">{{stateName}}</span> <span class=\"db ttu gray-100\">{{raceName}} {{party}}</span>",
+  "primary": "{{stateName}} Primary",
+  "primaryResultsIn": "{{stateName}} {{party}} Primary",
+  "raceNameAndState": "{{stateName}} {{raceName}}",
+  "preResultTitle": "{{party}} {{race}}"
+}

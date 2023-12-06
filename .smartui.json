@@ -1,0 +1,23 @@
+{
+  "storybook": {
+    "browsers": [
+      "chrome",
+      "firefox", 
+      "edge",
+      "safari"
+    ],
+    "viewports": [
+      [
+        1920,
+        1080
+      ],
+      [
+        1921,
+        1081
+      ]
+    ],
+    "waitForTimeout": 1,
+    "include": [],
+    "exclude": []
+  }
+}

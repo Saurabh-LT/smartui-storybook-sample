@@ -1,0 +1,43 @@
+{
+  "caucus": "Caucus de {{stateName}}",
+  "caucusResultsIn": "Caucus {{party}} {{stateName}}",
+  "caucusStartsAt": "Los caucuses comienzan a las {{time}} ET",
+  "ctaText": {
+    "text": "Resultados completos",
+    "url": "https://www.telemundo.com/noticias/elecciones-2020"
+  },
+  "download": "Descargue nuestra app",
+  "downloadUrl": "http://www.telemundo.com/noticias/app",
+  "liveBlog": "Actualizaciones en vivo",
+  "liveBlogButton": {
+    "title": "Resultados completos",
+    "link": "https://www.telemundo.com/noticias/liveblog"
+  },
+  "parties": {
+    "dem": "Dem",
+    "rep": "Rep"
+  },
+  "raceType": {
+    "primary": "primaria",
+    "caucus": "caucus"
+  },
+  "percentIn": "{{percent}}% contado",
+  "pollsCloseAt": "Las urnas cierran a las {{time}} ET",
+  "preResultsRaceName": "<span class=\"db ttu gray-100\">{{raceName}}</span> <span class=\"db f7 ttu gray-100\">{{stateName}}</span>",
+  "primary": "Primaria de {{stateName}}",
+  "primaryResultsIn": "Primaria {{party}} {{stateName}}",
+  "raceNameAndState": "{{raceName}} de {{stateName}}",
+  "preResultTitle": "{{race}} {{party}}",
+  "states": {
+    "New York": "Nueva York",
+    "New Jersey": "Nueva Jersey",
+    "New Mexico": "Nuevo México",
+    "New Hampshire": "Nueva Hampshire",
+    "North Carolina": "Carolina del Norte",
+    "North Dakota": "Dakota del Norte",
+    "South Carolina": "Carolina del Sur",
+    "South Dakota": "Dakota del Sur",
+    "Democrats Abroad": "Demócratas en el extranjero",
+    "District of Columbia": "Washington DC"
+  }
+}
