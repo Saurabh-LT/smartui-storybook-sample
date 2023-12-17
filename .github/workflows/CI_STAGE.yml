@@ -39,4 +39,4 @@ jobs:
         smartui --version
         smartui config create .smartui.json
         echo $pwd
-        smartui storybook ./storybook-static --config .smartui.json --env stage
+        smartui storybook ./storybook-static --config .smartui.json --env stage --force-rebuild
